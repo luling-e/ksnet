@@ -1,0 +1,69 @@
+/* reset */
+* { margin: 0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; color: inherit; }
+img { vertical-align: top; }
+button { border: none; background: inherit; }
+
+/* index */
+body { font: 14px 'SUIT'; color: #666; }
+.wrap12 { width: 1200px; margin: 0 auto; position: relative; }
+.wrap { width: 980px; margin: 0 auto; position: relative; }
+.wrap12::after, .wrap::after, ul::after, .cl::after { content: ""; clear: both; display: block;}
+.fl { display: flex; justify-content: center; align-items: center; }
+.fl::after { display: none; }
+.blind { width: 0; height: 0; font-size: 0; overflow: hidden; position: absolute; left: -99999px; }
+
+/* index-mv */
+#mv { background: url(../images/visual.jpg) no-repeat center/cover; height: 600px; }
+
+header .wrap12 { background: #fff; }
+header h1 { padding: 20px 0; }
+header ul { position: absolute; right: 40px; top: 0; }
+header ul li { float: left; line-height: 75px; font-size: 18px; font-weight: bold; color: black; margin-left: 70px; }
+
+#mv .main { position: absolute; left: 30px; top: 130px; }
+#mv .main dl { color: black; }
+#mv .main dl dt { font-size: 44px; font-weight: bold; }
+#mv .main dl dd { font-size: 40px; font-weight: 900; text-transform: uppercase; margin-top: 30px; }
+#mv .main ul li { float: left; margin: 70px 5px 0 0; }
+#mv .main ul li a { display: block; width: 40px; height: 4px; background: #1f4596; }
+#mv .main ul li.select a { background: linear-gradient(55deg, rgba(31,69,150,1) 0%, rgba(31,69,150,1) 20%, rgba(144,149,168,0.5) 20%); }
+#mv .main button { border: 1px solid #66636c69; width: 26px; height: 26px; cursor: pointer; margin-top: 25px; }
+#mv .main button i { color: #1f4596; font-size: 13px; position: relative; top: 1px; }
+
+/* index-bn */
+#bn .left { width: 484px; margin-top: 50px; display: inline-block; }
+#bn .left li { float: left; width: 236px; height: 236px; border: 1px solid #dddee0; padding: 30px; box-sizing: border-box; }
+#bn .left li:first-child { margin-right: 12px; }
+#bn .left li:last-child { width: 484px; margin-top: 12px; }
+#bn .left li strong { font-size: 18px; text-transform: uppercase; font-weight: 700; color: #000; }
+#bn .left li p { font-weight: bold; margin: 20px 0 40px; line-height: 1.4; }
+#bn .left li a { display: block; }
+#bn .left li:nth-child(2) p { margin-bottom: 16px; }
+#bn .left li:nth-child(1) { background: url(../images/pos.jpg) no-repeat right bottom; }
+#bn .left li:nth-child(2) { background: url(../images/pad.jpg) no-repeat right bottom; }
+#bn .left li:nth-child(3) { background: url(../images/com.jpg) no-repeat right bottom; }
+
+#bn .right { float: right; width: 484px; margin-top: 50px; position: relative; }
+#bn .right a div { width: 236px; height: 236px; background: #687aa2; position: absolute; top: 0; left: 0; color: #fff; padding: 30px; box-sizing: border-box; }
+#bn .right a div strong { font-size: 18px; text-transform: capitalize; font-weight: 700; }
+#bn .right a div strong span { font-style: italic; }
+#bn .right a div p { font-weight: bold; margin: 20px 0 16px; line-height: 1.4; }
+#bn .bottom li { float: left; width: 490px; height: 130px; border: 1px solid #dddee0; box-sizing: border-box; margin-top: 12px; padding: 24px 20px; background: #f9fafc; }
+#bn .bottom li:last-child { border-left: none; }
+#bn .bottom li p { color: #687aa2; font-weight: bold; padding: 0 10px 14px; border-bottom: 1px solid #dddee0; width: 264px; }
+#bn .bottom li:last-child p { width: 190px; }
+#bn .bottom li a { display: inline-block; font-size: 24px; font-weight: 900; color: #000; margin-top: 20px; padding: 0 10px; }
+#bn .bottom li a span { font-size: 20px; font-weight: bold; }
+#bn .bottom li span { font-weight: bold; }
+
+/* index-footer */
+footer .wrap12 { border-bottom: 1px solid #dddee0; }
+footer ul li { float: left; font-size: 16px; font-weight: bold; margin: 50px 16px 24px 0; }
+footer ul li:first-child { margin-left: 10px; }
+footer ul li.select a { color: #000; }
+footer .wrap > a { display: block; width: 256px; line-height: 56px; background: #8292a2; font-size: 16px; color: #fff; padding-left: 30px; box-sizing: border-box; position: absolute; right: 0; bottom: 0; }
+footer .wrap > a i { font-size: 14px; margin-left: 60px; }
+
+footer address { margin: 20px 0 16px; font-style: normal; font-size: 13px; line-height: 1.6; }
